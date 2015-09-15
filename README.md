@@ -37,8 +37,7 @@
 - User can edit their profile include Bio, Exp,… 
 - User can set their privacy to protect their info 
 - User can view history 
-- User can add their favourite tutor/student
-- 
+- User can add their favourite tutor/student.
 
 #### Wireframe
 > Check out our wireframe here: https://app.moqups.com/vuminhkhang1995@gmail.com/Mec1JzzR/view/page/a19266cfb
