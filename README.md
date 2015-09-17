@@ -31,13 +31,13 @@
 - User can chat to their student/tutor to make a deal and  complete the deal when tutor tap on “Accept” button.
 - User can identify their tutor/student via built-in radar and type “Matched” when meet each other. Time counting is start when the “Matched” button is tapped
 - User can rating and giving feedback to a tutor if a tutor accept to teach them 
-- User can ask *TeachMe* for available nearest place that they can meet tutor/student 
+-// User can ask *TeachMe* for available nearest place that they can meet tutor/student 
 - User who is tutor can set their available time, subject they can teach, fee, teach online or in-person 
 - User who is tutor receive a notification about learning request near them. 
 - User can edit their profile include Bio, Exp,… 
 - User can set their privacy to protect their info 
-- User can view history 
-- User can add their favourite tutor/student.
+-// User can view history 
+-// User can add their favourite tutor/student.
 
 #### Wireframe
 > Check out our wireframe here: https://app.moqups.com/vuminhkhang1995@gmail.com/Mec1JzzR/view/page/a19266cfb
