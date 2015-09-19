@@ -1,5 +1,5 @@
 //
-//  TutorResultsViewController.swift
+//  TutorFiltersViewController.swift
 //  TeachMe
 //
 //  Created by Clover on 9/19/15.
@@ -8,20 +8,23 @@
 
 import UIKit
 
-class TutorResultsViewController: UIViewController {
+class TutorFiltersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        customizeNavBar()
+
+        // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
+    @IBAction func onCancel(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
@@ -31,13 +34,5 @@ class TutorResultsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    func customizeNavBar() {
-        self.title = "Tutor Results"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Right Button", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
-    }
-    
-    func onFilter() {
-        
-    }
+
 }

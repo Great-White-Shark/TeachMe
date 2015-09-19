@@ -13,10 +13,15 @@ class SearchTutorViewController: UIViewController, UISearchBarDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var searchBar: UISearchBar!
+
+    override func viewWillAppear(animated: Bool) {
+        navigationItem.title = "Teach Me"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.searchBar.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +30,7 @@ class SearchTutorViewController: UIViewController, UISearchBarDelegate {
     }
     
     // - Search Bar
+    
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         self.searchBar.endEditing(true)
     }
@@ -32,7 +38,8 @@ class SearchTutorViewController: UIViewController, UISearchBarDelegate {
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-       
+        // Remove the back button's title by replacing the previous navigation bar's title
+        navigationItem.title = ""
     }
     
 }
