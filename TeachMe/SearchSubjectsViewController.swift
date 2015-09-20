@@ -1,14 +1,14 @@
 //
-//  TutorFiltersViewController.swift
+//  SearchSubjectsViewController.swift
 //  TeachMe
 //
-//  Created by Clover on 9/19/15.
+//  Created by Clover on 9/20/15.
 //  Copyright (c) 2015 Great White Shark. All rights reserved.
 //
 
 import UIKit
 
-class TutorFiltersViewController: UIViewController {
+class SearchSubjectsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +22,6 @@ class TutorFiltersViewController: UIViewController {
     }
     
 
-    @IBAction func onCancel(sender: UIBarButtonItem) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    @IBAction func onFilter(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
     /*
     // MARK: - Navigation
 
@@ -39,4 +32,7 @@ class TutorFiltersViewController: UIViewController {
     }
     */
 
+    @IBAction func onCancel(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }

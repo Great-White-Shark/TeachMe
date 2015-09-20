@@ -33,11 +33,10 @@ class TutorResultsViewController: UIViewController {
     */
     
     func customizeNavBar() {
-        self.title = "Tutor Results"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Right Button", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        self.navigationItem.title = "Tutor Results"
     }
     
-    func onFilter() {
-        
+    @IBAction func onFilter(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

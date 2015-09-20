@@ -9,10 +9,9 @@
 import UIKit
 import MapKit
 
-class SearchTutorViewController: UIViewController, UISearchBarDelegate {
+class SearchTutorViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var searchBar: UISearchBar!
 
     override func viewWillAppear(animated: Bool) {
         navigationItem.title = "Teach Me"
@@ -21,18 +20,11 @@ class SearchTutorViewController: UIViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.searchBar.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    // - Search Bar
-    
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        self.searchBar.endEditing(true)
     }
     
     // MARK: - Navigation
