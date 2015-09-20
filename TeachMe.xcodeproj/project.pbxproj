@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0EF8A61BAF1A0B00A8CFBF /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0EF8A51BAF1A0B00A8CFBF /* ChattingViewController.swift */; };
 		2A59A7EA1BAD7C5A00D0CCC9 /* PinTutorLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59A7E91BAD7C5A00D0CCC9 /* PinTutorLocationViewController.swift */; };
 		2A59A7EC1BAD802800D0CCC9 /* TutorResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59A7EB1BAD802800D0CCC9 /* TutorResultsViewController.swift */; };
 		2A718B651BAAE2B7008BD8D3 /* SearchTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A718B641BAAE2B7008BD8D3 /* SearchTutorViewController.swift */; };
 		2A81BDE21BADC646001EFE3A /* TutorFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81BDE11BADC646001EFE3A /* TutorFiltersViewController.swift */; };
 		2ADC13A11BAE82E50040FBF0 /* SearchSubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC13A01BAE82E50040FBF0 /* SearchSubjectsViewController.swift */; };
+		2AF8AA221BAF0757008BE35F /* SaveSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8AA211BAF0757008BE35F /* SaveSearchViewController.swift */; };
+		2AF8AA241BAF0D14008BE35F /* TutorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8AA231BAF0D14008BE35F /* TutorDetailsViewController.swift */; };
 		DC214CB51BA7442900A16BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC214CB41BA7442900A16BA8 /* AppDelegate.swift */; };
 		DC214CB71BA7442900A16BA8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC214CB61BA7442900A16BA8 /* WelcomeViewController.swift */; };
 		DC214CBA1BA7442900A16BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC214CB81BA7442900A16BA8 /* Main.storyboard */; };
@@ -31,11 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A0EF8A51BAF1A0B00A8CFBF /* ChattingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
 		2A59A7E91BAD7C5A00D0CCC9 /* PinTutorLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinTutorLocationViewController.swift; sourceTree = "<group>"; };
 		2A59A7EB1BAD802800D0CCC9 /* TutorResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorResultsViewController.swift; sourceTree = "<group>"; };
 		2A718B641BAAE2B7008BD8D3 /* SearchTutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTutorViewController.swift; sourceTree = "<group>"; };
 		2A81BDE11BADC646001EFE3A /* TutorFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorFiltersViewController.swift; sourceTree = "<group>"; };
 		2ADC13A01BAE82E50040FBF0 /* SearchSubjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSubjectsViewController.swift; sourceTree = "<group>"; };
+		2AF8AA211BAF0757008BE35F /* SaveSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveSearchViewController.swift; sourceTree = "<group>"; };
+		2AF8AA231BAF0D14008BE35F /* TutorDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorDetailsViewController.swift; sourceTree = "<group>"; };
 		DC214CAF1BA7442900A16BA8 /* TeachMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeachMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC214CB31BA7442900A16BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC214CB41BA7442900A16BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +80,10 @@
 				2A59A7E91BAD7C5A00D0CCC9 /* PinTutorLocationViewController.swift */,
 				2A59A7EB1BAD802800D0CCC9 /* TutorResultsViewController.swift */,
 				2A81BDE11BADC646001EFE3A /* TutorFiltersViewController.swift */,
+				2AF8AA231BAF0D14008BE35F /* TutorDetailsViewController.swift */,
 				2ADC13A01BAE82E50040FBF0 /* SearchSubjectsViewController.swift */,
+				2AF8AA211BAF0757008BE35F /* SaveSearchViewController.swift */,
+				2A0EF8A51BAF1A0B00A8CFBF /* ChattingViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -238,8 +247,11 @@
 				2A59A7EC1BAD802800D0CCC9 /* TutorResultsViewController.swift in Sources */,
 				2A59A7EA1BAD7C5A00D0CCC9 /* PinTutorLocationViewController.swift in Sources */,
 				2A718B651BAAE2B7008BD8D3 /* SearchTutorViewController.swift in Sources */,
+				2AF8AA241BAF0D14008BE35F /* TutorDetailsViewController.swift in Sources */,
 				DC214CB71BA7442900A16BA8 /* WelcomeViewController.swift in Sources */,
 				2ADC13A11BAE82E50040FBF0 /* SearchSubjectsViewController.swift in Sources */,
+				2A0EF8A61BAF1A0B00A8CFBF /* ChattingViewController.swift in Sources */,
+				2AF8AA221BAF0757008BE35F /* SaveSearchViewController.swift in Sources */,
 				2A81BDE21BADC646001EFE3A /* TutorFiltersViewController.swift in Sources */,
 				DC214CB51BA7442900A16BA8 /* AppDelegate.swift in Sources */,
 			);

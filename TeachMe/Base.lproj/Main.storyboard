@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="myH-D7-fRd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -63,7 +63,7 @@
         <!--Teach Me-->
         <scene sceneID="D6t-V0-Tfr">
             <objects>
-                <viewController id="cCv-3b-XAn" customClass="SearchTutorViewController" customModule="TeachMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cCv-3b-XAn" customClass="SearchTutorsViewController" customModule="TeachMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lAi-EW-bS0"/>
                         <viewControllerLayoutGuide type="bottom" id="bMs-ed-BB0"/>
@@ -94,7 +94,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Py8-v0-jIR">
-                                <rect key="frame" x="0.0" y="434" width="320" height="53"/>
+                                <rect key="frame" x="0.0" y="437" width="320" height="50"/>
                                 <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                 <inset key="contentEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -107,7 +107,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="woC-pc-mKY">
-                                <rect key="frame" x="0.0" y="382" width="320" height="53"/>
+                                <rect key="frame" x="0.0" y="388" width="320" height="50"/>
                                 <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                 <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="books">
@@ -125,9 +125,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeE-bl-6q5">
-                                <rect key="frame" x="0.0" y="486" width="330" height="52"/>
+                                <rect key="frame" x="0.0" y="487" width="330" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.51372549019607838" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="27"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
                                 <state key="normal" title="SEE TUTORS">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -150,7 +151,7 @@
                                 <rect key="frame" x="296" y="401" width="16" height="16"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYU-du-0Ob">
-                                <rect key="frame" x="16" y="434" width="288" height="1"/>
+                                <rect key="frame" x="16" y="437" width="288" height="1"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -192,10 +193,34 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t1Z-fX-pJT" id="jv7-aT-ThP">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Charles Lee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Rh-Ce-VR6">
+                                                    <rect key="frame" x="63" y="8" width="92" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="myH-D7-fRd" kind="push" id="c9s-jY-Srs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFF-Ij-nOX">
+                                <rect key="frame" x="0.0" y="489" width="360" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="6" minY="1" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Cannot find your right tutor? Save search now!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6k4-tB-gGv" kind="modal" id="GI3-L2-bHK"/>
+                                </connections>
+                            </button>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2sU-vR-f6x">
                                 <rect key="frame" x="0.0" y="519" width="320" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -205,6 +230,12 @@
                                     <tabBarItem tag="2" title="History" image="history_icon" id="Mny-Uo-xLj"/>
                                 </items>
                             </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q38-og-kVn">
+                                <rect key="frame" x="298" y="498" width="12" height="12"/>
+                                <state key="normal" image="x_icon">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -221,6 +252,158 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1M-nD-T7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1845" y="288"/>
+        </scene>
+        <!--Tutor Details-->
+        <scene sceneID="HRO-9p-8Ad">
+            <objects>
+                <viewController id="z2t-yV-3Dh" customClass="TutorDetailsViewController" customModule="TeachMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A9Y-kb-LiA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hfn-yq-Jrl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qFE-rv-kbC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OPK-a2-0al">
+                                <rect key="frame" x="0.0" y="64" width="93" height="93"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Charles Lee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpo-Y6-mVC">
+                                <rect key="frame" x="101" y="72" width="89" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UC Berkeley" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9O-iV-BWn">
+                                <rect key="frame" x="101" y="96" width="75" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Major(s): Computer Science" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ri-Th-0s4">
+                                <rect key="frame" x="101" y="115" width="168" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subject(s): Java, Swift, Surfing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoN-7i-9RE">
+                                <rect key="frame" x="101" y="134" width="184" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Z63-Rm-2vS">
+                                <rect key="frame" x="16" y="165" width="288" height="29"/>
+                                <segments>
+                                    <segment title="About"/>
+                                    <segment title="Reviews"/>
+                                    <segment title="Subject Expertise"/>
+                                </segments>
+                            </segmentedControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Guu-oZ-Rct">
+                                <rect key="frame" x="16" y="201" width="288" height="316"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNg-8R-Omp">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="548"/>
+                                        <string key="text">I graduated with a degree in Computer Science from UC Berkeley in 2006, and have 10+ years of being a software engineer in Silicon Valley.
+ 
+I've worked at three startups, all of which had successful exits. I was one of the first engineers at Luvocracy, a social e-commerce company which was acquired by Walmart.com after raising $11 million in funding from Kleiner Perkins. I was also the second engineer hired at venture-backed local recommendations startup GemShare, which was acquired by the social networking site NextDoor in early 2015.
+ 
+The past year I've been working with startups CodePath and Bloc teaching iOS, Ruby on Rails, Javascript, and Java.
+ 
+You can read more about me on my LinkedIn profile at https://www.linkedin.com/in/charleslee5.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <string key="userLabel">I graduated with a degree in Computer Science from UC Berkeley in 2006, and have 10+ years of being a software engineer in Silicon Valley.   I've worked at three startups, all of which had successful exits. I was one of the first engineers at Luvocracy, a social e-commerce company which was acquired by Walmart.com after raising $11 million in funding from Kleiner Perkins. I was also the second engineer hired at venture-backed local recommendations startup GemShare, which was acquired by the social networking site NextDoor in early 2015.   The past year I've been working with startups CodePath and Bloc teaching iOS, Ruby on Rails, Javascript, and Java.   You can read more about me on my LinkedIn profile at https://www.linkedin.com/in/charleslee5.</string>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQb-X8-Nzr">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.51372549020000002" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="27"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Text Me!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZxH-Nt-YVk" kind="push" id="JV3-Ku-EaN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tutor Details" id="nC7-D5-9J9"/>
+                    <connections>
+                        <outlet property="aboutTutorLabel" destination="pNg-8R-Omp" id="vph-KQ-VqW"/>
+                        <outlet property="scrollView" destination="Guu-oZ-Rct" id="MyJ-z3-lwX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9c-8a-pm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2948" y="263"/>
+        </scene>
+        <!--Chatting View Controller-->
+        <scene sceneID="o9a-jr-uZO">
+            <objects>
+                <viewController id="ZxH-Nt-YVk" customClass="ChattingViewController" customModule="TeachMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kVY-7Y-XcB"/>
+                        <viewControllerLayoutGuide type="bottom" id="ryR-WD-nxi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sVP-f5-TQs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cl3-f4-lAh">
+                                <rect key="frame" x="0.0" y="65" width="160" height="30"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.61176470589999998" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="Accept">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuq-YN-dtY">
+                                <rect key="frame" x="160" y="65" width="160" height="30"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.086274509799999996" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="Decline">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6C0-yR-5Er">
+                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msy-dR-xqP">
+                                        <rect key="frame" x="16" y="10" width="250" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" keyboardAppearance="light" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWk-WE-Nqb">
+                                        <rect key="frame" x="270" y="10" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="-2" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.51372549020000002" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UcC-mv-fzi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjF-bW-NIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3359" y="263"/>
         </scene>
         <!--Tutor Filters-->
         <scene sceneID="5cb-6o-rA5">
@@ -256,7 +439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="men-u6-twc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2377" y="1722"/>
+            <point key="canvasLocation" x="1559" y="1722"/>
         </scene>
         <!--Pin Tutor Location View Controller-->
         <scene sceneID="tzx-Ei-M6C">
@@ -277,6 +460,7 @@
                                 <rect key="frame" x="0.0" y="467" width="320" height="52"/>
                                 <color key="backgroundColor" red="0.44705882349999998" green="0.73333333329999995" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="27"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
                                 <state key="normal" title="SET LOCATION">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 </state>
@@ -401,7 +585,37 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yhZ-Rn-ZS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1845" y="1035"/>
+            <point key="canvasLocation" x="1559" y="1035"/>
+        </scene>
+        <!--Save search-->
+        <scene sceneID="ned-ZM-Vwz">
+            <objects>
+                <viewController id="Tbz-T3-me2" customClass="SaveSearchViewController" customModule="TeachMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2OA-mO-upk"/>
+                        <viewControllerLayoutGuide type="bottom" id="XtP-5v-7RJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qRt-47-M6B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Save search" id="eUv-JQ-BY9">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="L22-tY-Ln3">
+                            <connections>
+                                <action selector="onCancel:" destination="Tbz-T3-me2" id="Mky-qr-7Ow"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mJu-rf-hpE">
+                            <connections>
+                                <action selector="onSaveSearch:" destination="Tbz-T3-me2" id="RWc-Cp-f84"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wyo-cf-8j6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2034" y="1722"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="McU-nn-sf6">
@@ -439,6 +653,43 @@
             </objects>
             <point key="canvasLocation" x="1030" y="1035"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vM4-9x-NTR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6k4-tB-gGv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SaY-AH-QRX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tbz-T3-me2" kind="relationship" relationship="rootViewController" id="kvL-0Y-6Dt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VdD-Nb-ddr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2034" y="1034"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sbj-OE-Frl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="myH-D7-fRd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="KbW-Ws-Cng"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SNz-h2-jrt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="z2t-yV-3Dh" kind="relationship" relationship="rootViewController" id="Jtf-0H-WBk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ODg-G0-iT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2416" y="263"/>
+        </scene>
     </scenes>
     <resources>
         <image name="books" width="32" height="32"/>
@@ -449,6 +700,7 @@
         <image name="pin" width="24" height="24"/>
         <image name="result_icon" width="24" height="24"/>
         <image name="right_arrow" width="24" height="24"/>
+        <image name="x_icon" width="24" height="24"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
