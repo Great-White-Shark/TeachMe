@@ -77,11 +77,11 @@
 			children = (
 				DC214CB61BA7442900A16BA8 /* WelcomeViewController.swift */,
 				2A718B641BAAE2B7008BD8D3 /* SearchTutorViewController.swift */,
+				2ADC13A01BAE82E50040FBF0 /* SearchSubjectsViewController.swift */,
 				2A59A7E91BAD7C5A00D0CCC9 /* PinTutorLocationViewController.swift */,
 				2A59A7EB1BAD802800D0CCC9 /* TutorResultsViewController.swift */,
 				2A81BDE11BADC646001EFE3A /* TutorFiltersViewController.swift */,
 				2AF8AA231BAF0D14008BE35F /* TutorDetailsViewController.swift */,
-				2ADC13A01BAE82E50040FBF0 /* SearchSubjectsViewController.swift */,
 				2AF8AA211BAF0757008BE35F /* SaveSearchViewController.swift */,
 				2A0EF8A51BAF1A0B00A8CFBF /* ChattingViewController.swift */,
 			);

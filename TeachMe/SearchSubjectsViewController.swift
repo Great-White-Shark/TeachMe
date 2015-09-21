@@ -8,12 +8,17 @@
 
 import UIKit
 
-class SearchSubjectsViewController: UIViewController {
+class SearchSubjectsViewController: UIViewController, UISearchBarDelegate {
+
+    lazy var searchBar: UISearchBar = UISearchBar(frame: CGRectMake(0, 0, 200, 20))
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.searchBar.placeholder = "Search subjects. Try 'Algebra'..."
+        self.navigationItem.titleView = searchBar
+        self.searchBar.delegate = self
+        
     }
 
     override func didReceiveMemoryWarning() {

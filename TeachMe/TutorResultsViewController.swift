@@ -8,12 +8,16 @@
 
 import UIKit
 
-class TutorResultsViewController: UIViewController {
+class TutorResultsViewController: UIViewController, UITabBarDelegate {
 
+    @IBOutlet weak var tabBar: UITabBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         customizeNavBar()
+        tabBar.delegate = self
+        tabBar.selectedItem = tabBar.items?.first as? UITabBarItem
     }
     
     override func didReceiveMemoryWarning() {

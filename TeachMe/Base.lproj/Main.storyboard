@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="myH-D7-fRd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -52,6 +52,11 @@
                                     <segue destination="g3o-mD-g7B" kind="modal" id="JpO-oC-Z5J"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="Z55-ak-Meh">
+                                <rect key="frame" x="51" y="425" width="218" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -166,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LSC-Mj-iaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="288"/>
+            <point key="canvasLocation" x="800" y="288"/>
         </scene>
         <!--Tutor Results-->
         <scene sceneID="GbH-2o-1Fw">
@@ -208,19 +213,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFF-Ij-nOX">
-                                <rect key="frame" x="0.0" y="489" width="360" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
-                                <inset key="contentEdgeInsets" minX="6" minY="1" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Cannot find your right tutor? Save search now!">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="6k4-tB-gGv" kind="modal" id="GI3-L2-bHK"/>
-                                </connections>
-                            </button>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2sU-vR-f6x">
                                 <rect key="frame" x="0.0" y="519" width="320" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -230,12 +222,31 @@
                                     <tabBarItem tag="2" title="History" image="history_icon" id="Mny-Uo-xLj"/>
                                 </items>
                             </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q38-og-kVn">
-                                <rect key="frame" x="298" y="498" width="12" height="12"/>
-                                <state key="normal" image="x_icon">
-                                    <attributedString key="attributedTitle"/>
-                                </state>
-                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E1q-cO-nIX">
+                                <rect key="frame" x="0.0" y="488" width="320" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFF-Ij-nOX">
+                                        <rect key="frame" x="-2" y="6" width="288" height="19"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="6" minY="1" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Cannot find your right tutor? Save search now!">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="6k4-tB-gGv" kind="modal" id="GI3-L2-bHK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q38-og-kVn">
+                                        <rect key="frame" x="291" y="3" width="24" height="24"/>
+                                        <state key="normal" image="x_icon">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -248,10 +259,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tabBar" destination="2sU-vR-f6x" id="2ct-1G-gsK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1M-nD-T7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1845" y="288"/>
+            <point key="canvasLocation" x="1809" y="288"/>
         </scene>
         <!--Tutor Details-->
         <scene sceneID="HRO-9p-8Ad">
@@ -343,7 +357,7 @@ You can read more about me on my LinkedIn profile at https://www.linkedin.com/in
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9c-8a-pm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2948" y="263"/>
+            <point key="canvasLocation" x="2950" y="288"/>
         </scene>
         <!--Chatting View Controller-->
         <scene sceneID="o9a-jr-uZO">
@@ -365,6 +379,9 @@ You can read more about me on my LinkedIn profile at https://www.linkedin.com/in
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="I1r-ry-3JX" kind="push" id="7az-U6-b9x"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuq-YN-dtY">
                                 <rect key="frame" x="160" y="65" width="160" height="30"/>
@@ -403,7 +420,74 @@ You can read more about me on my LinkedIn profile at https://www.linkedin.com/in
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjF-bW-NIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3359" y="263"/>
+            <point key="canvasLocation" x="3363" y="288"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F9l-EU-p59">
+            <objects>
+                <viewController id="I1r-ry-3JX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KGb-83-t27"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Sd-mF-6ee"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vhl-UL-Uhg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBB-jd-w3j">
+                                <rect key="frame" x="0.0" y="64" width="320" height="30"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.61176470589999998" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                <state key="normal" title="Accepted">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CV0-ws-GMO">
+                                <rect key="frame" x="0.0" y="92" width="325" height="476"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDZ-eQ-PWJ">
+                                        <rect key="frame" x="120" y="438" width="85" height="30"/>
+                                        <state key="normal" title="Show map">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="uBL-ta-4TK" kind="modal" id="4xn-GH-2fW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kW6-9o-nry"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HUJ-Bc-Gw2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3805" y="288"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Oli-qR-vEY">
+            <objects>
+                <viewController id="uBL-ta-4TK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2rz-fg-crp"/>
+                        <viewControllerLayoutGuide type="bottom" id="vmv-y2-a6t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wh1-by-T42">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Trn-kw-v4w">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUh-Ht-qgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3805" y="960"/>
         </scene>
         <!--Tutor Filters-->
         <scene sceneID="5cb-6o-rA5">
@@ -505,6 +589,10 @@ You can read more about me on my LinkedIn profile at https://www.linkedin.com/in
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="Jjm-Uv-yBf" id="vhP-7l-q1Y"/>
+                        <outlet property="tabBar" destination="gCz-Tq-F0N" id="mXn-RD-1HW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qz3-a7-2uo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -567,7 +655,7 @@ You can read more about me on my LinkedIn profile at https://www.linkedin.com/in
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1R-tL-M66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="404" y="288"/>
+            <point key="canvasLocation" x="248" y="288"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mqN-YJ-3ts">
@@ -590,7 +678,7 @@ You can read more about me on my LinkedIn profile at https://www.linkedin.com/in
         <!--Save search-->
         <scene sceneID="ned-ZM-Vwz">
             <objects>
-                <viewController id="Tbz-T3-me2" customClass="SaveSearchViewController" customModule="TeachMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Tbz-T3-me2" customClass="SaveTutorSearchViewController" customModule="TeachMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2OA-mO-upk"/>
                         <viewControllerLayoutGuide type="bottom" id="XtP-5v-7RJ"/>
@@ -643,6 +731,7 @@ You can read more about me on my LinkedIn profile at https://www.linkedin.com/in
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2lK-Xf-h7d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.38431372549999998" green="0.61176470589999998" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -688,7 +777,7 @@ You can read more about me on my LinkedIn profile at https://www.linkedin.com/in
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODg-G0-iT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2416" y="263"/>
+            <point key="canvasLocation" x="2417" y="288"/>
         </scene>
     </scenes>
     <resources>

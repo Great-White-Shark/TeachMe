@@ -1,5 +1,5 @@
 //
-//  SaveSearchViewController.swift
+//  SaveTutorSearchViewController.swift
 //  TeachMe
 //
 //  Created by Clover on 9/20/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SaveSearchViewController: UIViewController {
+class SaveTutorSearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

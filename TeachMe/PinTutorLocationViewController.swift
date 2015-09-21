@@ -9,14 +9,16 @@
 import UIKit
 import MapKit
 
-class PinTutorLocationViewController: UIViewController {
+class PinTutorLocationViewController: UIViewController, UITabBarDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var tabBar: UITabBar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tabBar.delegate = self
+        tabBar.selectedItem = tabBar.items?.first as? UITabBarItem
     }
 
     override func didReceiveMemoryWarning() {
