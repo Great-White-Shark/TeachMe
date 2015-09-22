@@ -199,14 +199,17 @@
                                 <rect key="frame" x="0.0" y="109" width="320" height="410"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="t1Z-fX-pJT">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TutorCell" rowHeight="69" id="t1Z-fX-pJT" customClass="TutorCell" customModule="TeachMe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t1Z-fX-pJT" id="jv7-aT-ThP">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4J5-8N-Gll">
+                                                    <rect key="frame" x="8" y="8" width="44" height="44"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Charles Lee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Rh-Ce-VR6">
-                                                    <rect key="frame" x="63" y="8" width="92" height="21"/>
+                                                    <rect key="frame" x="60" y="8" width="92" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -214,7 +217,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="z2t-yV-3Dh" kind="push" id="hah-bV-FEd"/>
+                                            <outlet property="tutorImageView" destination="4J5-8N-Gll" id="XN1-yk-1iQ"/>
+                                            <outlet property="tutorNameLabel" destination="2Rh-Ce-VR6" id="Aft-Lg-gHf"/>
+                                            <segue destination="z2t-yV-3Dh" kind="push" id="jJ8-ga-njc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -266,6 +271,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tabBar" destination="2sU-vR-f6x" id="2ct-1G-gsK"/>
+                        <outlet property="tableView" destination="oRd-ww-25H" id="c5s-QU-jlh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g1M-nD-T7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -486,6 +492,10 @@ You can read more about me on my LinkedIn profile at https://www.linkedin.com/in
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Trn-kw-v4w">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RD-Jn-Mwn">
+                                <rect key="frame" x="263" y="14" width="46" height="30"/>
+                                <state key="normal" title="Close"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

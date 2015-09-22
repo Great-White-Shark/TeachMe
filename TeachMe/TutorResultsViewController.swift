@@ -8,14 +8,20 @@
 
 import UIKit
 
-class TutorResultsViewController: UIViewController, UITabBarDelegate {
+class TutorResultsViewController: UIViewController, UITabBarDelegate, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tabBar: UITabBar!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         customizeNavBar()
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.reloadData()
+        
         tabBar.delegate = self
         tabBar.selectedItem = tabBar.items?.first as? UITabBarItem
     }
@@ -25,6 +31,16 @@ class TutorResultsViewController: UIViewController, UITabBarDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("TutorCell") as! TutorCell
+        cell.tutorNameLabel.text = "Charles Lee"
+        return cell
+    }
+
 
     /*
     // MARK: - Navigation

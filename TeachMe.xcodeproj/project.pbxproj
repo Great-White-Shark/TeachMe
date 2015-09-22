@@ -15,6 +15,7 @@
 		2A975F4F1BB101810010376E /* TutorFiltersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A975F4E1BB101810010376E /* TutorFiltersTableViewController.swift */; };
 		2AAFF1411BB134E0008E15E7 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFF13F1BB134E0008E15E7 /* SwitchCell.swift */; };
 		2AAFF1421BB134E0008E15E7 /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAFF1401BB134E0008E15E7 /* SwitchCell.xib */; };
+		2AAFF1441BB14250008E15E7 /* TutorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFF1431BB14250008E15E7 /* TutorCell.swift */; };
 		2ADC13A11BAE82E50040FBF0 /* SearchSubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC13A01BAE82E50040FBF0 /* SearchSubjectsViewController.swift */; };
 		2AF8AA221BAF0757008BE35F /* SaveSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8AA211BAF0757008BE35F /* SaveSearchViewController.swift */; };
 		2AF8AA241BAF0D14008BE35F /* TutorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8AA231BAF0D14008BE35F /* TutorDetailsViewController.swift */; };
@@ -46,6 +47,7 @@
 		2A975F4E1BB101810010376E /* TutorFiltersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorFiltersTableViewController.swift; sourceTree = "<group>"; };
 		2AAFF13F1BB134E0008E15E7 /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
 		2AAFF1401BB134E0008E15E7 /* SwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
+		2AAFF1431BB14250008E15E7 /* TutorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorCell.swift; sourceTree = "<group>"; };
 		2ADC13A01BAE82E50040FBF0 /* SearchSubjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSubjectsViewController.swift; sourceTree = "<group>"; };
 		2AF8AA211BAF0757008BE35F /* SaveSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveSearchViewController.swift; sourceTree = "<group>"; };
 		2AF8AA231BAF0D14008BE35F /* TutorDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorDetailsViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				2AAFF13F1BB134E0008E15E7 /* SwitchCell.swift */,
 				2AAFF1401BB134E0008E15E7 /* SwitchCell.xib */,
+				2AAFF1431BB14250008E15E7 /* TutorCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				2AAFF1411BB134E0008E15E7 /* SwitchCell.swift in Sources */,
 				DC214CB71BA7442900A16BA8 /* WelcomeViewController.swift in Sources */,
 				2ADC13A11BAE82E50040FBF0 /* SearchSubjectsViewController.swift in Sources */,
+				2AAFF1441BB14250008E15E7 /* TutorCell.swift in Sources */,
 				2A0EF8A61BAF1A0B00A8CFBF /* ChattingViewController.swift in Sources */,
 				2AF8AA221BAF0757008BE35F /* SaveSearchViewController.swift in Sources */,
 				DC214CB51BA7442900A16BA8 /* AppDelegate.swift in Sources */,
