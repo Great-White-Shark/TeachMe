@@ -21,8 +21,6 @@ class TutorDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //aboutTutorLabel.preferredMaxLayoutWidth = scrollView.frame.width
-
         scrollView.contentSize.height = aboutTutorLabel.frame.height
         
     }

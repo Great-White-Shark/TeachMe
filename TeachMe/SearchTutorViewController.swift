@@ -32,6 +32,7 @@ class SearchTutorsViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Remove the back button's title by replacing the previous navigation bar's title
         navigationItem.title = ""
+        
     }
     
 }

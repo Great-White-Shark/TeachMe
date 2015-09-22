@@ -13,16 +13,11 @@ class ChattingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        customizeNavBar()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func customizeNavBar() {
-        self.navigationItem.title = "Tutor Results"
     }
 
     /*
