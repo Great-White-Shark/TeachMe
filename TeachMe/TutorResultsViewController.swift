@@ -13,6 +13,10 @@ class TutorResultsViewController: UIViewController, UITabBarDelegate, UITableVie
     @IBOutlet weak var tabBar: UITabBar!
     @IBOutlet weak var tableView: UITableView!
     
+    override func viewWillAppear(animated: Bool) {
+        navigationItem.title = "Tutor Results"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +35,9 @@ class TutorResultsViewController: UIViewController, UITabBarDelegate, UITableVie
         // Dispose of any resources that can be recreated.
     }
     
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -42,15 +49,13 @@ class TutorResultsViewController: UIViewController, UITabBarDelegate, UITableVie
     }
 
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        // Remove the back button's title by replacing the previous navigation bar's title
+        navigationItem.title = ""
     }
-    */
+
     
     func customizeNavBar() {
         self.navigationItem.title = "Tutor Results"

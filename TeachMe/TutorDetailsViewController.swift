@@ -15,7 +15,7 @@ class TutorDetailsViewController: UIViewController {
     @IBOutlet weak var aboutTutorLabel: UILabel!
     
     override func viewWillAppear(animated: Bool) {
-        navigationItem.title = "Teach Me"
+        navigationItem.title = "Tutor Details"
     }
     
     override func viewDidLoad() {

@@ -3,7 +3,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'TeachMe' do
-   pod "AFNetworking"  
+     pod "AFNetworking"
 end
 
 target 'TeachMeTests' do

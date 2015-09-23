@@ -13,9 +13,14 @@
 		2A59A7EC1BAD802800D0CCC9 /* TutorResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59A7EB1BAD802800D0CCC9 /* TutorResultsViewController.swift */; };
 		2A718B651BAAE2B7008BD8D3 /* SearchTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A718B641BAAE2B7008BD8D3 /* SearchTutorViewController.swift */; };
 		2A975F4F1BB101810010376E /* TutorFiltersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A975F4E1BB101810010376E /* TutorFiltersTableViewController.swift */; };
+		2A9A340B1BB26D600071A8E0 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A340A1BB26D600071A8E0 /* Tutor.swift */; };
+		2A9A340D1BB270D40071A8E0 /* TutorReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A340C1BB270D40071A8E0 /* TutorReview.swift */; };
+		2AA5CEF51BB14E60003AFA93 /* DGRunkeeperSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5CEF41BB14E60003AFA93 /* DGRunkeeperSwitch.swift */; };
+		2AA5CEF71BB158DE003AFA93 /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5CEF61BB158DE003AFA93 /* FloatRatingView.swift */; };
 		2AAFF1411BB134E0008E15E7 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFF13F1BB134E0008E15E7 /* SwitchCell.swift */; };
 		2AAFF1421BB134E0008E15E7 /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAFF1401BB134E0008E15E7 /* SwitchCell.xib */; };
 		2AAFF1441BB14250008E15E7 /* TutorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFF1431BB14250008E15E7 /* TutorCell.swift */; };
+		2AB3E4BC1BB29539007641C1 /* AcceptedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB3E4BB1BB29539007641C1 /* AcceptedViewController.swift */; };
 		2ADC13A11BAE82E50040FBF0 /* SearchSubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC13A01BAE82E50040FBF0 /* SearchSubjectsViewController.swift */; };
 		2AF8AA221BAF0757008BE35F /* SaveSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8AA211BAF0757008BE35F /* SaveSearchViewController.swift */; };
 		2AF8AA241BAF0D14008BE35F /* TutorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8AA231BAF0D14008BE35F /* TutorDetailsViewController.swift */; };
@@ -45,9 +50,14 @@
 		2A59A7EB1BAD802800D0CCC9 /* TutorResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorResultsViewController.swift; sourceTree = "<group>"; };
 		2A718B641BAAE2B7008BD8D3 /* SearchTutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTutorViewController.swift; sourceTree = "<group>"; };
 		2A975F4E1BB101810010376E /* TutorFiltersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorFiltersTableViewController.swift; sourceTree = "<group>"; };
+		2A9A340A1BB26D600071A8E0 /* Tutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
+		2A9A340C1BB270D40071A8E0 /* TutorReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorReview.swift; sourceTree = "<group>"; };
+		2AA5CEF41BB14E60003AFA93 /* DGRunkeeperSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGRunkeeperSwitch.swift; sourceTree = "<group>"; };
+		2AA5CEF61BB158DE003AFA93 /* FloatRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatRatingView.swift; sourceTree = "<group>"; };
 		2AAFF13F1BB134E0008E15E7 /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
 		2AAFF1401BB134E0008E15E7 /* SwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
 		2AAFF1431BB14250008E15E7 /* TutorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorCell.swift; sourceTree = "<group>"; };
+		2AB3E4BB1BB29539007641C1 /* AcceptedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptedViewController.swift; sourceTree = "<group>"; };
 		2ADC13A01BAE82E50040FBF0 /* SearchSubjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSubjectsViewController.swift; sourceTree = "<group>"; };
 		2AF8AA211BAF0757008BE35F /* SaveSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveSearchViewController.swift; sourceTree = "<group>"; };
 		2AF8AA231BAF0D14008BE35F /* TutorDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorDetailsViewController.swift; sourceTree = "<group>"; };
@@ -123,9 +133,36 @@
 				DC214CB61BA7442900A16BA8 /* WelcomeViewController.swift */,
 				2A0A31CB1BB116AB000A2B5E /* Home */,
 				2A0A31CC1BB117AD000A2B5E /* Tutor Results */,
-				2A0EF8A51BAF1A0B00A8CFBF /* ChattingViewController.swift */,
+				2AB3E4BA1BB2951D007641C1 /* Chatting */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2A9A34091BB26D190071A8E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A9A340A1BB26D600071A8E0 /* Tutor.swift */,
+				2A9A340C1BB270D40071A8E0 /* TutorReview.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2AA5CEF31BB14E1B003AFA93 /* 3rd Party Library */ = {
+			isa = PBXGroup;
+			children = (
+				2AA5CEF41BB14E60003AFA93 /* DGRunkeeperSwitch.swift */,
+				2AA5CEF61BB158DE003AFA93 /* FloatRatingView.swift */,
+			);
+			name = "3rd Party Library";
+			sourceTree = "<group>";
+		};
+		2AB3E4BA1BB2951D007641C1 /* Chatting */ = {
+			isa = PBXGroup;
+			children = (
+				2A0EF8A51BAF1A0B00A8CFBF /* ChattingViewController.swift */,
+				2AB3E4BB1BB29539007641C1 /* AcceptedViewController.swift */,
+			);
+			name = Chatting;
 			sourceTree = "<group>";
 		};
 		4CD93A85DC0ECC98BCA434EA /* Pods */ = {
@@ -168,6 +205,8 @@
 		DC214CB11BA7442900A16BA8 /* TeachMe */ = {
 			isa = PBXGroup;
 			children = (
+				2AA5CEF31BB14E1B003AFA93 /* 3rd Party Library */,
+				2A9A34091BB26D190071A8E0 /* Models */,
 				2A0803211BAFECED00A80F4E /* Views */,
 				2A59A7ED1BAD802F00D0CCC9 /* View Controllers */,
 				DC214CB41BA7442900A16BA8 /* AppDelegate.swift */,
@@ -357,8 +396,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A59A7EC1BAD802800D0CCC9 /* TutorResultsViewController.swift in Sources */,
+				2AB3E4BC1BB29539007641C1 /* AcceptedViewController.swift in Sources */,
 				2A59A7EA1BAD7C5A00D0CCC9 /* PinTutorLocationViewController.swift in Sources */,
 				2A975F4F1BB101810010376E /* TutorFiltersTableViewController.swift in Sources */,
+				2AA5CEF71BB158DE003AFA93 /* FloatRatingView.swift in Sources */,
+				2A9A340B1BB26D600071A8E0 /* Tutor.swift in Sources */,
 				2A718B651BAAE2B7008BD8D3 /* SearchTutorViewController.swift in Sources */,
 				2AF8AA241BAF0D14008BE35F /* TutorDetailsViewController.swift in Sources */,
 				2AAFF1411BB134E0008E15E7 /* SwitchCell.swift in Sources */,
@@ -366,7 +408,9 @@
 				2ADC13A11BAE82E50040FBF0 /* SearchSubjectsViewController.swift in Sources */,
 				2AAFF1441BB14250008E15E7 /* TutorCell.swift in Sources */,
 				2A0EF8A61BAF1A0B00A8CFBF /* ChattingViewController.swift in Sources */,
+				2AA5CEF51BB14E60003AFA93 /* DGRunkeeperSwitch.swift in Sources */,
 				2AF8AA221BAF0757008BE35F /* SaveSearchViewController.swift in Sources */,
+				2A9A340D1BB270D40071A8E0 /* TutorReview.swift in Sources */,
 				DC214CB51BA7442900A16BA8 /* AppDelegate.swift in Sources */,
 				2A0A31CE1BB117F3000A2B5E /* CheckFilterTypeViewController.swift in Sources */,
 			);
