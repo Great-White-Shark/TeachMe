@@ -11,6 +11,7 @@
 		2A0EF8A61BAF1A0B00A8CFBF /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0EF8A51BAF1A0B00A8CFBF /* ChattingViewController.swift */; };
 		2A59A7EA1BAD7C5A00D0CCC9 /* PinTutorLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59A7E91BAD7C5A00D0CCC9 /* PinTutorLocationViewController.swift */; };
 		2A59A7EC1BAD802800D0CCC9 /* TutorResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59A7EB1BAD802800D0CCC9 /* TutorResultsViewController.swift */; };
+		2A5CC4481BB306CA0048DBB8 /* SeeTutorOnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC4471BB306CA0048DBB8 /* SeeTutorOnMapViewController.swift */; };
 		2A718B651BAAE2B7008BD8D3 /* SearchTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A718B641BAAE2B7008BD8D3 /* SearchTutorViewController.swift */; };
 		2A975F4F1BB101810010376E /* TutorFiltersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A975F4E1BB101810010376E /* TutorFiltersTableViewController.swift */; };
 		2A9A340B1BB26D600071A8E0 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A340A1BB26D600071A8E0 /* Tutor.swift */; };
@@ -22,9 +23,10 @@
 		2AAFF1441BB14250008E15E7 /* TutorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFF1431BB14250008E15E7 /* TutorCell.swift */; };
 		2AB3E4BC1BB29539007641C1 /* AcceptedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB3E4BB1BB29539007641C1 /* AcceptedViewController.swift */; };
 		2ADC13A11BAE82E50040FBF0 /* SearchSubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC13A01BAE82E50040FBF0 /* SearchSubjectsViewController.swift */; };
+		2AE72F1A1BB3929000DB9CAA /* fakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE72F191BB3929000DB9CAA /* fakeData.swift */; };
 		2AF8AA221BAF0757008BE35F /* SaveSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8AA211BAF0757008BE35F /* SaveSearchViewController.swift */; };
 		2AF8AA241BAF0D14008BE35F /* TutorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8AA231BAF0D14008BE35F /* TutorDetailsViewController.swift */; };
-		6985EAA368240A98AFEF13C3 /* Pods_TeachMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF01DCEBD75FB0EACDCFE5C3 /* Pods_TeachMe.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A40F5BED08B7A1FD891A6D5C /* libPods-TeachMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D2B065DD5E87838D5F0EA1 /* libPods-TeachMe.a */; };
 		DC214CB51BA7442900A16BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC214CB41BA7442900A16BA8 /* AppDelegate.swift */; };
 		DC214CB71BA7442900A16BA8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC214CB61BA7442900A16BA8 /* WelcomeViewController.swift */; };
 		DC214CBA1BA7442900A16BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC214CB81BA7442900A16BA8 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		2A0EF8A51BAF1A0B00A8CFBF /* ChattingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
 		2A59A7E91BAD7C5A00D0CCC9 /* PinTutorLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinTutorLocationViewController.swift; sourceTree = "<group>"; };
 		2A59A7EB1BAD802800D0CCC9 /* TutorResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorResultsViewController.swift; sourceTree = "<group>"; };
+		2A5CC4441BB301F90048DBB8 /* TeachMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TeachMe-Bridging-Header.h"; sourceTree = "<group>"; };
+		2A5CC4471BB306CA0048DBB8 /* SeeTutorOnMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeTutorOnMapViewController.swift; sourceTree = "<group>"; };
 		2A718B641BAAE2B7008BD8D3 /* SearchTutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTutorViewController.swift; sourceTree = "<group>"; };
 		2A975F4E1BB101810010376E /* TutorFiltersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorFiltersTableViewController.swift; sourceTree = "<group>"; };
 		2A9A340A1BB26D600071A8E0 /* Tutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
@@ -59,10 +63,12 @@
 		2AAFF1431BB14250008E15E7 /* TutorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorCell.swift; sourceTree = "<group>"; };
 		2AB3E4BB1BB29539007641C1 /* AcceptedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptedViewController.swift; sourceTree = "<group>"; };
 		2ADC13A01BAE82E50040FBF0 /* SearchSubjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSubjectsViewController.swift; sourceTree = "<group>"; };
+		2AE72F191BB3929000DB9CAA /* fakeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fakeData.swift; sourceTree = "<group>"; };
 		2AF8AA211BAF0757008BE35F /* SaveSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveSearchViewController.swift; sourceTree = "<group>"; };
 		2AF8AA231BAF0D14008BE35F /* TutorDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorDetailsViewController.swift; sourceTree = "<group>"; };
 		49880F836E548F7D541CF75A /* Pods-TeachMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeachMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeachMe/Pods-TeachMe.release.xcconfig"; sourceTree = "<group>"; };
 		8A2668D652594912E2E4B2C3 /* Pods-TeachMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeachMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeachMe/Pods-TeachMe.debug.xcconfig"; sourceTree = "<group>"; };
+		C0D2B065DD5E87838D5F0EA1 /* libPods-TeachMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeachMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC214CAF1BA7442900A16BA8 /* TeachMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeachMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC214CB31BA7442900A16BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC214CB41BA7442900A16BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +79,6 @@
 		DC214CC41BA7442900A16BA8 /* TeachMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeachMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC214CC91BA7442900A16BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC214CCA1BA7442A00A16BA8 /* TeachMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachMeTests.swift; sourceTree = "<group>"; };
-		DF01DCEBD75FB0EACDCFE5C3 /* Pods_TeachMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeachMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6985EAA368240A98AFEF13C3 /* Pods_TeachMe.framework in Frameworks */,
+				A40F5BED08B7A1FD891A6D5C /* libPods-TeachMe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +148,7 @@
 			children = (
 				2A9A340A1BB26D600071A8E0 /* Tutor.swift */,
 				2A9A340C1BB270D40071A8E0 /* TutorReview.swift */,
+				2AE72F191BB3929000DB9CAA /* fakeData.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -161,6 +167,7 @@
 			children = (
 				2A0EF8A51BAF1A0B00A8CFBF /* ChattingViewController.swift */,
 				2AB3E4BB1BB29539007641C1 /* AcceptedViewController.swift */,
+				2A5CC4471BB306CA0048DBB8 /* SeeTutorOnMapViewController.swift */,
 			);
 			name = Chatting;
 			sourceTree = "<group>";
@@ -177,7 +184,7 @@
 		608CA052E3235A8425C3DA4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF01DCEBD75FB0EACDCFE5C3 /* Pods_TeachMe.framework */,
+				C0D2B065DD5E87838D5F0EA1 /* libPods-TeachMe.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,6 +221,7 @@
 				DC214CBB1BA7442900A16BA8 /* Images.xcassets */,
 				DC214CBD1BA7442900A16BA8 /* LaunchScreen.xib */,
 				DC214CB21BA7442900A16BA8 /* Supporting Files */,
+				2A5CC4441BB301F90048DBB8 /* TeachMe-Bridging-Header.h */,
 			);
 			path = TeachMe;
 			sourceTree = "<group>";
@@ -254,7 +262,6 @@
 				DC214CAB1BA7442900A16BA8 /* Sources */,
 				DC214CAC1BA7442900A16BA8 /* Frameworks */,
 				DC214CAD1BA7442900A16BA8 /* Resources */,
-				8FEF5709793FF9385108825A /* Embed Pods Frameworks */,
 				54DE818D1CF5EF1E47F549C7 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -358,21 +365,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeachMe/Pods-TeachMe-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8FEF5709793FF9385108825A /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeachMe/Pods-TeachMe-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9B033BC8F33D5DBFCCBD104F /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,8 +401,10 @@
 				2AAFF1441BB14250008E15E7 /* TutorCell.swift in Sources */,
 				2A0EF8A61BAF1A0B00A8CFBF /* ChattingViewController.swift in Sources */,
 				2AA5CEF51BB14E60003AFA93 /* DGRunkeeperSwitch.swift in Sources */,
+				2AE72F1A1BB3929000DB9CAA /* fakeData.swift in Sources */,
 				2AF8AA221BAF0757008BE35F /* SaveSearchViewController.swift in Sources */,
 				2A9A340D1BB270D40071A8E0 /* TutorReview.swift in Sources */,
+				2A5CC4481BB306CA0048DBB8 /* SeeTutorOnMapViewController.swift in Sources */,
 				DC214CB51BA7442900A16BA8 /* AppDelegate.swift in Sources */,
 				2A0A31CE1BB117F3000A2B5E /* CheckFilterTypeViewController.swift in Sources */,
 			);
@@ -540,9 +534,12 @@
 			baseConfigurationReference = 8A2668D652594912E2E4B2C3 /* Pods-TeachMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TeachMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TeachMe/TeachMe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -551,9 +548,11 @@
 			baseConfigurationReference = 49880F836E548F7D541CF75A /* Pods-TeachMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TeachMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TeachMe/TeachMe-Bridging-Header.h";
 			};
 			name = Release;
 		};

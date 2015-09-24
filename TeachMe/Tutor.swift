@@ -17,10 +17,11 @@ class Tutor: NSObject {
 //    let location: String?
     let university: String?
     let major: String?
-    let subject: [String]?
+    let subjectsArray: [String]?
     let pricePerHr: Double?
     let about: String?
     var reviews: [TutorReview]?
+    let subjectExpertise: String?
     let reviewCount: Int? /* reviewCount is also ratingCount */
     let ratingAverage: Double?
     let teachingHr: Double?
@@ -46,9 +47,13 @@ class Tutor: NSObject {
         
         self.university = dictionary["tutor_university"] as? String
         self.major = dictionary["tutor_major"] as? String
-        self.subject = dictionary["tutor_subject"] as? [String]
+        
+        
+        self.subjectsArray = dictionary["tutor_teaching_subjects"] as? [String]
+
         self.pricePerHr = dictionary["tutor_price"] as? Double
         self.about = dictionary["tutor_about"] as? String
+        self.subjectExpertise = dictionary["tutor_subject_expertise"] as? String
         
         let reviewDictionary = dictionary["tutor_reviews"] as? [NSDictionary]
         if reviewDictionary != nil {
@@ -63,5 +68,15 @@ class Tutor: NSObject {
         self.reviewCount = dictionary["review_count"] as? Int
         self.ratingAverage = dictionary["rating_average"] as? Double
         self.teachingHr = dictionary["teaching_hour"] as? Double
+    }
+    
+    
+    class func tutors(#array: [NSDictionary]) -> [Tutor] {
+        var tutors = [Tutor]()
+        for dictionary in array {
+            var tutor = Tutor(dictionary: dictionary)
+            tutors.append(tutor)
+        }
+        return tutors
     }
 }

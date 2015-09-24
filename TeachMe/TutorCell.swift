@@ -16,8 +16,37 @@ class TutorCell: UITableViewCell {
     @IBOutlet weak var tutorUniversityLabel: UILabel!
     @IBOutlet weak var tutorSubjectLabel: UILabel!
     @IBOutlet weak var tutorRatingLabel: UIView!
-    @IBOutlet weak var tutorLocation: UILabel!
+    @IBOutlet weak var tutorLocationLabel: UILabel!
    
+    var tutor: Tutor! {
+        didSet {
+            tutorNameLabel.text = tutor.name
+            tutorImageView.setImageWithURL(tutor.imageURL)
+           
+            if tutor.pricePerHr != nil {
+                pricePerHrLabel.text = "\(tutor.pricePerHr!)k/hr"
+            } else {
+                pricePerHrLabel.text = ""
+            }
+            
+            tutorUniversityLabel.text = tutor.university
+            
+            if tutor.subjectsArray != nil && tutor.subjectsArray?.count != 0 {
+                var subjects = ", ".join(tutor.subjectsArray!)
+                if tutor.subjectsArray!.count < 2 {
+                    tutorSubjectLabel.text = "Subject: \(subjects)"
+                } else {
+                    tutorSubjectLabel.text = "Subjects: \(subjects)"
+                }
+                
+            } else {
+                tutorSubjectLabel.text = "Subject: Not updated yet!"
+            }
+            
+            tutorLocationLabel.text = "18Bis/14 NTMK"
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -29,9 +58,5 @@ class TutorCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func fakeData() -> NSDictionary {
-        var fakeDictionary: NSDictionary!
-        fakeDictionary
-    }
-
+    
 }

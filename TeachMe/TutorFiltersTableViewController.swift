@@ -10,23 +10,20 @@ import UIKit
 
 class TutorFiltersTableViewController: UITableViewController {
 
-
-    
     @IBOutlet weak var genderSegmentedControl: UISegmentedControl!
     @IBOutlet weak var nameInputTextField: UITextField!
+
     var isMale: Bool?
+    
+    
+    override func viewWillDisappear(animated: Bool) {
+        navigationItem.title = "Tutor Filters"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "Tutor Filters"
-        self.tableView.backgroundColor = UIColor(red: 243.0/255, green: 243.0/255, blue: 243.0/255, alpha: 1)
-       
         
-    }
-    
-    func switchValueDidChange(sender:DGRunkeeperSwitch) {
-        print("valueChanged")
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +31,10 @@ class TutorFiltersTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
     @IBAction func onCancelButton(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
@@ -64,17 +65,17 @@ class TutorFiltersTableViewController: UITableViewController {
         }
     }
     
-    func addGenderSwitch() -> DGRunkeeperSwitch {
-        let runkeeperSwitch = DGRunkeeperSwitch(leftTitle: "M", rightTitle: "F")
-        runkeeperSwitch.backgroundColor = UIColor(red: 98.0/255.0, green: 156.0/255.0, blue: 68.0/255.0, alpha: 1.0)
-        runkeeperSwitch.selectedBackgroundColor = .whiteColor()
-        runkeeperSwitch.titleColor = .whiteColor()
-        runkeeperSwitch.selectedTitleColor = UIColor(red: 98.0/255.0, green: 156.0/255.0, blue: 68.0/255.0, alpha: 1.0)
-        runkeeperSwitch.titleFont = UIFont(name: "HelveticaNeue-Medium", size: 13.0)
-        runkeeperSwitch.frame = CGRect(x: 0, y: 0, width: 50.0, height: 30.0)
-        runkeeperSwitch.addTarget(self, action: Selector("switchValueDidChange:"), forControlEvents: .ValueChanged)
-        return runkeeperSwitch
-    }
+//    func addGenderSwitch() -> DGRunkeeperSwitch {
+//        let runkeeperSwitch = DGRunkeeperSwitch(leftTitle: "M", rightTitle: "F")
+//        runkeeperSwitch.backgroundColor = UIColor(red: 98.0/255.0, green: 156.0/255.0, blue: 68.0/255.0, alpha: 1.0)
+//        runkeeperSwitch.selectedBackgroundColor = .whiteColor()
+//        runkeeperSwitch.titleColor = .whiteColor()
+//        runkeeperSwitch.selectedTitleColor = UIColor(red: 98.0/255.0, green: 156.0/255.0, blue: 68.0/255.0, alpha: 1.0)
+//        runkeeperSwitch.titleFont = UIFont(name: "HelveticaNeue-Medium", size: 13.0)
+//        runkeeperSwitch.frame = CGRect(x: 0, y: 0, width: 50.0, height: 30.0)
+//        runkeeperSwitch.addTarget(self, action: Selector("switchValueDidChange:"), forControlEvents: .ValueChanged)
+//        return runkeeperSwitch
+//    }
     
     
     /*

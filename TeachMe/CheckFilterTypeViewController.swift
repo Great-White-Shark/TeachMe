@@ -17,7 +17,7 @@ class CheckFilterTypeViewController: UIViewController, UITableViewDataSource, UI
     /* filterBasedOn = 0 (University), 1 (Major), 2 (Subject) */
     var filterBasedOn: Int!
     
-    var searchNames: [[String:AnyObject]] = []
+    var searchNames: [[String:AnyObject]]?
     var searchNamesFilter: [[String:AnyObject]]?
     var searchActive: Bool = false
     
@@ -26,11 +26,11 @@ class CheckFilterTypeViewController: UIViewController, UITableViewDataSource, UI
         
         switch (filterBasedOn) {
         case 0:
-            searchNames = universityList()
+            searchNames = universityList() ?? []
         case 1:
-            searchNames = majorList()
+            searchNames = majorList() ?? []
         default:
-            searchNames = subjectList()
+            searchNames = subjectList() ?? []
         }
         
         tableView.delegate = self
@@ -63,7 +63,7 @@ class CheckFilterTypeViewController: UIViewController, UITableViewDataSource, UI
         if searchActive {
             return searchNamesFilter!.count
         } else {
-            return searchNames.count
+            return searchNames!.count
         }
     }
     
@@ -74,8 +74,8 @@ class CheckFilterTypeViewController: UIViewController, UITableViewDataSource, UI
             cell.titleLabel.text = searchNamesFilter![indexPath.row]["name"] as? String
             
         } else {
-            cell.isChecked = searchNames[indexPath.row]["isChecked"] as! Bool
-            cell.titleLabel.text = searchNames[indexPath.row]["name"] as?
+            cell.isChecked = searchNames![indexPath.row]["isChecked"] as! Bool
+            cell.titleLabel.text = searchNames![indexPath.row]["name"] as?
             String
         }
         return cell
@@ -91,21 +91,21 @@ class CheckFilterTypeViewController: UIViewController, UITableViewDataSource, UI
                 searchNamesFilter![indexPath.row]["isChecked"] = true
             }
             let tempCode = searchNamesFilter![indexPath.row]["code"] as? String
-            for var i = 0; i < searchNames.count; i++ {
-                if tempCode == searchNames[i]["code"] as? String {
-                    if searchNames[i]["isChecked"] as! Bool == true {
-                        searchNames[i]["isChecked"] = false
+            for var i = 0; i < searchNames!.count; i++ {
+                if tempCode == searchNames![i]["code"] as? String {
+                    if searchNames![i]["isChecked"] as! Bool == true {
+                        searchNames![i]["isChecked"] = false
                     } else {
-                        searchNames[i]["isChecked"] = true
+                        searchNames![i]["isChecked"] = true
                     }
                 }
             }
             
         } else {
-            if searchNames[indexPath.row]["isChecked"] as! Bool == true {
-                searchNames[indexPath.row]["isChecked"] = false
+            if searchNames![indexPath.row]["isChecked"] as! Bool == true {
+                searchNames![indexPath.row]["isChecked"] = false
             } else {
-                searchNames[indexPath.row]["isChecked"] = true
+                searchNames![indexPath.row]["isChecked"] = true
             }
         }
         
@@ -133,7 +133,7 @@ class CheckFilterTypeViewController: UIViewController, UITableViewDataSource, UI
     }
     
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        searchNamesFilter = searchNames.filter({ (searchNames) -> Bool in
+        searchNamesFilter = searchNames!.filter({ (searchNames) -> Bool in
             let tmpTitle = searchNames["name"] as? String
             let range = tmpTitle!.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
             return range != nil
