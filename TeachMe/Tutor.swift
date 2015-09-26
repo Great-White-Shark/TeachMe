@@ -71,10 +71,10 @@ class Tutor: NSObject {
     }
     
     
-    class func tutors(#array: [NSDictionary]) -> [Tutor] {
+    class func tutors(array array: [NSDictionary]) -> [Tutor] {
         var tutors = [Tutor]()
         for dictionary in array {
-            var tutor = Tutor(dictionary: dictionary)
+            let tutor = Tutor(dictionary: dictionary)
             tutors.append(tutor)
         }
         return tutors

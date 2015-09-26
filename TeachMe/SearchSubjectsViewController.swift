@@ -58,7 +58,7 @@ class SearchSubjectsViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("SwitchCell") as! SwitchCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("SwitchCell") as! SwitchCell
         if searchActive {
             cell.isChecked = subjectNamesFilter![indexPath.row]["isChecked"] as! Bool
             cell.titleLabel.text = subjectNamesFilter![indexPath.row]["name"] as? String

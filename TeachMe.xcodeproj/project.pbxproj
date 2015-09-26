@@ -297,6 +297,8 @@
 		DC214CA71BA7442900A16BA8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Great White Shark";
 				TargetAttributes = {

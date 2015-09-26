@@ -91,7 +91,7 @@ class DGRunkeeperSwitch: UIControl {
     // MARK: Constructors
     
     init(leftTitle: String!, rightTitle: String!) {
-        super.init(frame: CGRect.zeroRect)
+        super.init(frame: CGRect.zero)
         
         self.leftTitle = leftTitle
         self.rightTitle = rightTitle
@@ -99,7 +99,7 @@ class DGRunkeeperSwitch: UIControl {
         finishInit()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         finishInit()
@@ -159,7 +159,7 @@ class DGRunkeeperSwitch: UIControl {
     // MARK: -
     // MARK: Observer
     
-    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [NSObject : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         if keyPath == "selectedBackgroundView.frame" {
             titleMaskView.frame = selectedBackgroundView.frame
         }
@@ -210,8 +210,7 @@ class DGRunkeeperSwitch: UIControl {
         
         self.selectedIndex = selectedIndex
         if animated {
-            
-            UIView.animateWithDuration(animationDuration, delay: 0.0, usingSpringWithDamping: animationSpringDamping, initialSpringVelocity: animationInitialSpringVelocity, options: (UIViewAnimationOptions.BeginFromCurrentState | UIViewAnimationOptions.CurveEaseOut), animations: { () -> Void in
+            UIView.animateWithDuration(animationDuration, delay: 0.0, usingSpringWithDamping: animationSpringDamping, initialSpringVelocity: animationInitialSpringVelocity, options: [UIViewAnimationOptions.BeginFromCurrentState, UIViewAnimationOptions.CurveEaseOut], animations: { () -> Void in
                 self.layoutSubviews()
                 }, completion: { (finished) -> Void in
                     if finished {

@@ -68,7 +68,7 @@ class CheckFilterTypeViewController: UIViewController, UITableViewDataSource, UI
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("SwitchCell") as! SwitchCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("SwitchCell") as! SwitchCell
         if searchActive {
             cell.isChecked = searchNamesFilter![indexPath.row]["isChecked"] as! Bool
             cell.titleLabel.text = searchNamesFilter![indexPath.row]["name"] as? String

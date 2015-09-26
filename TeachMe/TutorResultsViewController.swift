@@ -31,7 +31,7 @@ class TutorResultsViewController: UIViewController, UITabBarDelegate, UITableVie
         super.viewDidLoad()
         
         
-        var fakeDataArray = fakeData.sharedInstance.generateData()
+        let fakeDataArray = fakeData.sharedInstance.generateData()
         tutors = Tutor.tutors(array: fakeDataArray)
         
         // Set original Y-coordinate for save search bar
@@ -53,7 +53,7 @@ class TutorResultsViewController: UIViewController, UITabBarDelegate, UITableVie
         self.fadedView.addGestureRecognizer(fadedViewpanGestureRecognizer)
         
         tabBar.delegate = self
-        tabBar.selectedItem = tabBar.items?.first as? UITabBarItem
+        tabBar.selectedItem = tabBar.items?.first as! UITabBarItem!
     }
     
     override func didReceiveMemoryWarning() {
