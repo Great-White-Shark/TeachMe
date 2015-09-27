@@ -18,7 +18,7 @@ class PinTutorLocationViewController: UIViewController, UITabBarDelegate {
         super.viewDidLoad()
 
         tabBar.delegate = self
-        tabBar.selectedItem = tabBar.items?.first as? UITabBarItem!
+        tabBar.selectedItem = tabBar.items?.first
     }
 
     override func didReceiveMemoryWarning() {

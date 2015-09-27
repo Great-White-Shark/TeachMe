@@ -53,7 +53,7 @@ class TutorResultsViewController: UIViewController, UITabBarDelegate, UITableVie
         self.fadedView.addGestureRecognizer(fadedViewpanGestureRecognizer)
         
         tabBar.delegate = self
-        tabBar.selectedItem = tabBar.items?.first as! UITabBarItem!
+        tabBar.selectedItem = tabBar.items?.first as UITabBarItem!
     }
     
     override func didReceiveMemoryWarning() {

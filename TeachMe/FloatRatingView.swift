@@ -295,15 +295,15 @@ public class FloatRatingView: UIView {
     }
     
     override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if let touch = touches.first as? UITouch? {
-            let touchLocation = touch!.locationInView(self)
+        if let touch = touches.first {
+            let touchLocation = touch.locationInView(self)
             self.handleTouchAtLocation(touchLocation)
         }
     }
     
     override public func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        if let touch = touches.first as? UITouch? {
-            let touchLocation = touch!.locationInView(self)
+        if let touch = touches.first  {
+            let touchLocation = touch.locationInView(self)
             self.handleTouchAtLocation(touchLocation)
         }
     }
