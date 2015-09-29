@@ -50,18 +50,6 @@
                     <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SHq-Uk-ofw" customClass="FloatRatingView" customModule="TeachMe" customModuleProvider="target">
                         <rect key="frame" x="96" y="60" width="150" height="20"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="minRating">
-                                <integer key="value" value="0"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
-                                <integer key="value" value="5"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="YES"/>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="floatRatings" value="YES"/>
-                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
-                            <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull"/>
-                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </tableViewCellContentView>
@@ -77,8 +65,4 @@
             <point key="canvasLocation" x="272" y="356"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="StarEmpty" width="22" height="22"/>
-        <image name="StarFull" width="22" height="22"/>
-    </resources>
 </document>

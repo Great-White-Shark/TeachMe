@@ -44,6 +44,12 @@ class TutorCell: UITableViewCell {
             }
             
             tutorRatingView.contentMode = UIViewContentMode.ScaleAspectFit
+            tutorRatingView.editable = true
+            tutorRatingView.emptyImage = UIImage(named: "StarEmpty")
+            tutorRatingView.fullImage = UIImage(named: "StarFull")
+            tutorRatingView.floatRatings = true
+            tutorRatingView.minRating = 0
+            tutorRatingView.maxRating = 5
             tutorRatingView.rating = tutor.ratingAverage as! Float
             
             tutorLocationLabel.text = "18Bis/14 NTMK"
