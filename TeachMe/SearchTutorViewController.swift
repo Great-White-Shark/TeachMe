@@ -27,7 +27,6 @@ class SearchTutorsViewController: UIViewController, CLLocationManagerDelegate {
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,5 +61,4 @@ class SearchTutorsViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.stopUpdatingLocation()
         }
     }
-    
 }

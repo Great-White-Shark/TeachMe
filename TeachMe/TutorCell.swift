@@ -21,7 +21,7 @@ class TutorCell: UITableViewCell {
     var tutor: Tutor! {
         didSet {
             tutorNameLabel.text = tutor.name
-            tutorImageView.setImageWithURL(tutor.imageURL)
+            tutorImageView.setImageWithURL(tutor.imageURL!)
             
             if tutor.pricePerHr != nil {
                 pricePerHrLabel.text = "\(tutor.pricePerHr!)k/hr"

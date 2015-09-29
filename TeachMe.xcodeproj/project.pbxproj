@@ -30,7 +30,7 @@
 		2AE72F1A1BB3929000DB9CAA /* fakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE72F191BB3929000DB9CAA /* fakeData.swift */; };
 		2AF8AA221BAF0757008BE35F /* SaveSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8AA211BAF0757008BE35F /* SaveSearchViewController.swift */; };
 		2AF8AA241BAF0D14008BE35F /* TutorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8AA231BAF0D14008BE35F /* TutorDetailsViewController.swift */; };
-		A40F5BED08B7A1FD891A6D5C /* libPods-TeachMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D2B065DD5E87838D5F0EA1 /* libPods-TeachMe.a */; };
+		CF82FEA4D13BFC63933C9DE8 /* Pods_TeachMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0087A36F8D29BB4972A96644 /* Pods_TeachMe.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DC214CB51BA7442900A16BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC214CB41BA7442900A16BA8 /* AppDelegate.swift */; };
 		DC214CB71BA7442900A16BA8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC214CB61BA7442900A16BA8 /* WelcomeViewController.swift */; };
 		DC214CBA1BA7442900A16BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC214CB81BA7442900A16BA8 /* Main.storyboard */; };
@@ -50,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0087A36F8D29BB4972A96644 /* Pods_TeachMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeachMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A0A31CD1BB117F3000A2B5E /* CheckFilterTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckFilterTypeViewController.swift; sourceTree = "<group>"; };
 		2A0EF8A51BAF1A0B00A8CFBF /* ChattingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
 		2A59A7E91BAD7C5A00D0CCC9 /* PinTutorLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinTutorLocationViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		2AF8AA231BAF0D14008BE35F /* TutorDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorDetailsViewController.swift; sourceTree = "<group>"; };
 		49880F836E548F7D541CF75A /* Pods-TeachMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeachMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeachMe/Pods-TeachMe.release.xcconfig"; sourceTree = "<group>"; };
 		8A2668D652594912E2E4B2C3 /* Pods-TeachMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeachMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeachMe/Pods-TeachMe.debug.xcconfig"; sourceTree = "<group>"; };
-		C0D2B065DD5E87838D5F0EA1 /* libPods-TeachMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TeachMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC214CAF1BA7442900A16BA8 /* TeachMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeachMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC214CB31BA7442900A16BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC214CB41BA7442900A16BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 			files = (
 				2AC4B4B21BB8EA0800C69DAD /* CoreLocation.framework in Frameworks */,
 				2AC4B4B01BB8EA0100C69DAD /* MapKit.framework in Frameworks */,
-				A40F5BED08B7A1FD891A6D5C /* libPods-TeachMe.a in Frameworks */,
+				CF82FEA4D13BFC63933C9DE8 /* Pods_TeachMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +198,7 @@
 			children = (
 				2AC4B4B11BB8EA0800C69DAD /* CoreLocation.framework */,
 				2AC4B4AF1BB8EA0100C69DAD /* MapKit.framework */,
-				C0D2B065DD5E87838D5F0EA1 /* libPods-TeachMe.a */,
+				0087A36F8D29BB4972A96644 /* Pods_TeachMe.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -277,6 +277,7 @@
 				DC214CAC1BA7442900A16BA8 /* Frameworks */,
 				DC214CAD1BA7442900A16BA8 /* Resources */,
 				54DE818D1CF5EF1E47F549C7 /* Copy Pods Resources */,
+				8D2E2F627522E7AD0F1326C4 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -380,6 +381,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeachMe/Pods-TeachMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D2E2F627522E7AD0F1326C4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeachMe/Pods-TeachMe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9B033BC8F33D5DBFCCBD104F /* Check Pods Manifest.lock */ = {
@@ -556,6 +572,39 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TeachMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"BMASliders\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teachme.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TeachMe/TeachMe-Bridging-Header.h";
@@ -571,6 +620,39 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TeachMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"BMASliders\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teachme.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TeachMe/TeachMe-Bridging-Header.h";

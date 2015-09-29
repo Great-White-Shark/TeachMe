@@ -8,6 +8,15 @@
 
 import UIKit
 
+extension UIImageView {
+    public func setImageWithURL(url: NSURL) {
+        let request = NSURLRequest(URL: url)
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
+            (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
+            self.image = UIImage(data: data!)
+        }
+    }
+}
 
 class TutorDetailsViewController: UIViewController {
 
@@ -31,7 +40,7 @@ class TutorDetailsViewController: UIViewController {
         super.viewDidLoad()
         
         tutorNameLabel.text = tutor.name
-        tutorImageView.setImageWithURL(tutor.imageURL)
+        tutorImageView.setImageWithURL(tutor.imageURL!)
         
         if tutor.pricePerHr != nil {
             pricePerHrLabel.text = "\(tutor.pricePerHr!)k/hr"
