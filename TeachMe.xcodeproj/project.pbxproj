@@ -13,6 +13,9 @@
 		2A59A7EC1BAD802800D0CCC9 /* TutorResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A59A7EB1BAD802800D0CCC9 /* TutorResultsViewController.swift */; };
 		2A5CC4481BB306CA0048DBB8 /* SeeTutorOnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CC4471BB306CA0048DBB8 /* SeeTutorOnMapViewController.swift */; };
 		2A718B651BAAE2B7008BD8D3 /* SearchTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A718B641BAAE2B7008BD8D3 /* SearchTutorViewController.swift */; };
+		2A75C67C1BB94C8700D89EA8 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A75C67B1BB94C8700D89EA8 /* MapTasks.swift */; settings = {ASSET_TAGS = (); }; };
+		2A8565181BBA2C4400041400 /* TutorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8565161BBA2C4400041400 /* TutorCell.swift */; settings = {ASSET_TAGS = (); }; };
+		2A8565191BBA2C4400041400 /* TutorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8565171BBA2C4400041400 /* TutorCell.xib */; settings = {ASSET_TAGS = (); }; };
 		2A975F4F1BB101810010376E /* TutorFiltersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A975F4E1BB101810010376E /* TutorFiltersTableViewController.swift */; };
 		2A9A340B1BB26D600071A8E0 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A340A1BB26D600071A8E0 /* Tutor.swift */; };
 		2A9A340D1BB270D40071A8E0 /* TutorReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A340C1BB270D40071A8E0 /* TutorReview.swift */; };
@@ -20,8 +23,9 @@
 		2AA5CEF71BB158DE003AFA93 /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA5CEF61BB158DE003AFA93 /* FloatRatingView.swift */; };
 		2AAFF1411BB134E0008E15E7 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFF13F1BB134E0008E15E7 /* SwitchCell.swift */; };
 		2AAFF1421BB134E0008E15E7 /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAFF1401BB134E0008E15E7 /* SwitchCell.xib */; };
-		2AAFF1441BB14250008E15E7 /* TutorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAFF1431BB14250008E15E7 /* TutorCell.swift */; };
 		2AB3E4BC1BB29539007641C1 /* AcceptedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB3E4BB1BB29539007641C1 /* AcceptedViewController.swift */; };
+		2AC4B4B01BB8EA0100C69DAD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC4B4AF1BB8EA0100C69DAD /* MapKit.framework */; };
+		2AC4B4B21BB8EA0800C69DAD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC4B4B11BB8EA0800C69DAD /* CoreLocation.framework */; };
 		2ADC13A11BAE82E50040FBF0 /* SearchSubjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADC13A01BAE82E50040FBF0 /* SearchSubjectsViewController.swift */; };
 		2AE72F1A1BB3929000DB9CAA /* fakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE72F191BB3929000DB9CAA /* fakeData.swift */; };
 		2AF8AA221BAF0757008BE35F /* SaveSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF8AA211BAF0757008BE35F /* SaveSearchViewController.swift */; };
@@ -53,6 +57,9 @@
 		2A5CC4441BB301F90048DBB8 /* TeachMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TeachMe-Bridging-Header.h"; sourceTree = "<group>"; };
 		2A5CC4471BB306CA0048DBB8 /* SeeTutorOnMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeTutorOnMapViewController.swift; sourceTree = "<group>"; };
 		2A718B641BAAE2B7008BD8D3 /* SearchTutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTutorViewController.swift; sourceTree = "<group>"; };
+		2A75C67B1BB94C8700D89EA8 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
+		2A8565161BBA2C4400041400 /* TutorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorCell.swift; sourceTree = "<group>"; };
+		2A8565171BBA2C4400041400 /* TutorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TutorCell.xib; sourceTree = "<group>"; };
 		2A975F4E1BB101810010376E /* TutorFiltersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorFiltersTableViewController.swift; sourceTree = "<group>"; };
 		2A9A340A1BB26D600071A8E0 /* Tutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
 		2A9A340C1BB270D40071A8E0 /* TutorReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorReview.swift; sourceTree = "<group>"; };
@@ -60,8 +67,9 @@
 		2AA5CEF61BB158DE003AFA93 /* FloatRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatRatingView.swift; sourceTree = "<group>"; };
 		2AAFF13F1BB134E0008E15E7 /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
 		2AAFF1401BB134E0008E15E7 /* SwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
-		2AAFF1431BB14250008E15E7 /* TutorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorCell.swift; sourceTree = "<group>"; };
 		2AB3E4BB1BB29539007641C1 /* AcceptedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptedViewController.swift; sourceTree = "<group>"; };
+		2AC4B4AF1BB8EA0100C69DAD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2AC4B4B11BB8EA0800C69DAD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2ADC13A01BAE82E50040FBF0 /* SearchSubjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSubjectsViewController.swift; sourceTree = "<group>"; };
 		2AE72F191BB3929000DB9CAA /* fakeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fakeData.swift; sourceTree = "<group>"; };
 		2AF8AA211BAF0757008BE35F /* SaveSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveSearchViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC4B4B21BB8EA0800C69DAD /* CoreLocation.framework in Frameworks */,
+				2AC4B4B01BB8EA0100C69DAD /* MapKit.framework in Frameworks */,
 				A40F5BED08B7A1FD891A6D5C /* libPods-TeachMe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,7 +115,8 @@
 			children = (
 				2AAFF13F1BB134E0008E15E7 /* SwitchCell.swift */,
 				2AAFF1401BB134E0008E15E7 /* SwitchCell.xib */,
-				2AAFF1431BB14250008E15E7 /* TutorCell.swift */,
+				2A8565161BBA2C4400041400 /* TutorCell.swift */,
+				2A8565171BBA2C4400041400 /* TutorCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -149,6 +160,7 @@
 				2A9A340A1BB26D600071A8E0 /* Tutor.swift */,
 				2A9A340C1BB270D40071A8E0 /* TutorReview.swift */,
 				2AE72F191BB3929000DB9CAA /* fakeData.swift */,
+				2A75C67B1BB94C8700D89EA8 /* MapTasks.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -184,6 +196,8 @@
 		608CA052E3235A8425C3DA4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AC4B4B11BB8EA0800C69DAD /* CoreLocation.framework */,
+				2AC4B4AF1BB8EA0100C69DAD /* MapKit.framework */,
 				C0D2B065DD5E87838D5F0EA1 /* libPods-TeachMe.a */,
 			);
 			name = Frameworks;
@@ -337,6 +351,7 @@
 			files = (
 				DC214CBA1BA7442900A16BA8 /* Main.storyboard in Resources */,
 				2AAFF1421BB134E0008E15E7 /* SwitchCell.xib in Resources */,
+				2A8565191BBA2C4400041400 /* TutorCell.xib in Resources */,
 				DC214CBF1BA7442900A16BA8 /* LaunchScreen.xib in Resources */,
 				DC214CBC1BA7442900A16BA8 /* Images.xcassets in Resources */,
 			);
@@ -392,6 +407,7 @@
 				2A59A7EC1BAD802800D0CCC9 /* TutorResultsViewController.swift in Sources */,
 				2AB3E4BC1BB29539007641C1 /* AcceptedViewController.swift in Sources */,
 				2A59A7EA1BAD7C5A00D0CCC9 /* PinTutorLocationViewController.swift in Sources */,
+				2A75C67C1BB94C8700D89EA8 /* MapTasks.swift in Sources */,
 				2A975F4F1BB101810010376E /* TutorFiltersTableViewController.swift in Sources */,
 				2AA5CEF71BB158DE003AFA93 /* FloatRatingView.swift in Sources */,
 				2A9A340B1BB26D600071A8E0 /* Tutor.swift in Sources */,
@@ -400,7 +416,7 @@
 				2AAFF1411BB134E0008E15E7 /* SwitchCell.swift in Sources */,
 				DC214CB71BA7442900A16BA8 /* WelcomeViewController.swift in Sources */,
 				2ADC13A11BAE82E50040FBF0 /* SearchSubjectsViewController.swift in Sources */,
-				2AAFF1441BB14250008E15E7 /* TutorCell.swift in Sources */,
+				2A8565181BBA2C4400041400 /* TutorCell.swift in Sources */,
 				2A0EF8A61BAF1A0B00A8CFBF /* ChattingViewController.swift in Sources */,
 				2AA5CEF51BB14E60003AFA93 /* DGRunkeeperSwitch.swift in Sources */,
 				2AE72F1A1BB3929000DB9CAA /* fakeData.swift in Sources */,

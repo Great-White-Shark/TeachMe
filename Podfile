@@ -4,6 +4,7 @@ platform :ios, '6.0'
 
 target 'TeachMe' do
      pod "AFNetworking"
+     pod "GoogleMaps"
 end
 
 target 'TeachMeTests' do

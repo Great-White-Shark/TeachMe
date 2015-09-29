@@ -20,11 +20,14 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - GoogleMaps (1.9.2)
 
 DEPENDENCIES:
   - AFNetworking
+  - GoogleMaps
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  GoogleMaps: 56aac0f356383bab283c731acb1e687c51de6472
 
 COCOAPODS: 0.38.2

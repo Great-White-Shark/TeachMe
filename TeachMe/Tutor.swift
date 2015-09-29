@@ -23,8 +23,8 @@ class Tutor: NSObject {
     var reviews: [TutorReview]?
     let subjectExpertise: String?
     let reviewCount: Int? /* reviewCount is also ratingCount */
-    let ratingAverage: Double?
-    let teachingHr: Double?
+    let ratingAverage: NSNumber?
+    let teachingHr: NSNumber?
     
     init(dictionary: NSDictionary) {
         self.name = dictionary["tutor_name"] as? String
@@ -66,8 +66,8 @@ class Tutor: NSObject {
         }
         
         self.reviewCount = dictionary["review_count"] as? Int
-        self.ratingAverage = dictionary["rating_average"] as? Double
-        self.teachingHr = dictionary["teaching_hour"] as? Double
+        self.ratingAverage = dictionary["rating_average"] as? NSNumber
+        self.teachingHr = dictionary["teaching_hour"] as? NSNumber
     }
     
     

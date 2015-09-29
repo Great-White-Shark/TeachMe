@@ -10,11 +10,10 @@ import UIKit
 
 class TutorFiltersTableViewController: UITableViewController {
 
-    @IBOutlet weak var genderSegmentedControl: UISegmentedControl!
     @IBOutlet weak var nameInputTextField: UITextField!
-
-    var isMale: Bool?
+    @IBOutlet weak var genderImageView: UIImageView!
     
+    var isMale: Bool?
     
     override func viewWillDisappear(animated: Bool) {
         navigationItem.title = "Tutor Filters"
@@ -33,6 +32,24 @@ class TutorFiltersTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        print(isMale)
+        if indexPath.section == 0 && indexPath.row == 3 {
+            if isMale == nil {
+                isMale = false
+                genderImageView.image = UIImage(named: "StarFull")
+                print(isMale)
+            }
+                
+            else if isMale == false {
+                isMale = true
+                genderImageView.image = UIImage(named: "StarEmpty")
+            }
+                
+            else if isMale == true {
+                isMale = nil
+                genderImageView.image = nil
+            }
+        }
     }
     
     @IBAction func onCancelButton(sender: UIBarButtonItem) {

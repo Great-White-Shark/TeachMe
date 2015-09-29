@@ -39,6 +39,7 @@ class TutorResultsViewController: UIViewController, UITabBarDelegate, UITableVie
         
         customizeNavBar()
         
+        tableView.registerNib(UINib(nibName: "TutorCell", bundle: nil), forCellReuseIdentifier: "TutorCell")
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()
@@ -66,6 +67,14 @@ class TutorResultsViewController: UIViewController, UITabBarDelegate, UITableVie
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("TutorDetailsVC") as! TutorDetailsViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        // Remove the back button's title by replacing the previous navigation bar's title
+        navigationItem.title = ""
+        
+        let tutor = searchActive ? tutorsFilter![indexPath.row] : tutors![indexPath.row]
+        vc.tutor = tutor
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -148,15 +157,8 @@ class TutorResultsViewController: UIViewController, UITabBarDelegate, UITableVie
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "TutorDetails" {
-            // Remove the back button's title by replacing the previous navigation bar's title
-            navigationItem.title = ""
-            let cell = sender as! UITableViewCell
-            let indexPath = tableView.indexPathForCell(cell)!
-            let tutor = searchActive ? tutorsFilter![indexPath.row] : tutors![indexPath.row]
-            let tutorDetailsViewController = segue.destinationViewController as! TutorDetailsViewController
-            tutorDetailsViewController.tutor = tutor
-        }
+      
+        
     }
 
     

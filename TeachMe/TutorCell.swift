@@ -9,20 +9,20 @@
 import UIKit
 
 class TutorCell: UITableViewCell {
-
+    
     @IBOutlet weak var tutorNameLabel: UILabel!
     @IBOutlet weak var tutorImageView: UIImageView!
     @IBOutlet weak var pricePerHrLabel: UILabel!
     @IBOutlet weak var tutorUniversityLabel: UILabel!
     @IBOutlet weak var tutorSubjectLabel: UILabel!
-    @IBOutlet weak var tutorRatingLabel: UIView!
+    @IBOutlet weak var tutorRatingView: FloatRatingView!
     @IBOutlet weak var tutorLocationLabel: UILabel!
-   
+    
     var tutor: Tutor! {
         didSet {
             tutorNameLabel.text = tutor.name
             tutorImageView.setImageWithURL(tutor.imageURL)
-           
+            
             if tutor.pricePerHr != nil {
                 pricePerHrLabel.text = "\(tutor.pricePerHr!)k/hr"
             } else {
@@ -43,6 +43,9 @@ class TutorCell: UITableViewCell {
                 tutorSubjectLabel.text = "Subject: Not updated yet!"
             }
             
+            tutorRatingView.contentMode = UIViewContentMode.ScaleAspectFit
+            tutorRatingView.rating = tutor.ratingAverage as! Float
+            
             tutorLocationLabel.text = "18Bis/14 NTMK"
         }
     }
@@ -51,10 +54,10 @@ class TutorCell: UITableViewCell {
         super.awakeFromNib()
         
     }
-
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
