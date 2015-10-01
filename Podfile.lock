@@ -2,15 +2,18 @@ PODS:
   - Alamofire (2.0.2)
   - BMASliders (1.0.0)
   - GoogleMaps (1.9.2)
+  - MARKRangeSlider (0.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 2.0)
   - BMASliders (~> 1.0.0)
   - GoogleMaps
+  - MARKRangeSlider
 
 SPEC CHECKSUMS:
   Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
   BMASliders: 6a6d6ca5f3f6fefce7ec9823d9c456fd03e106cc
   GoogleMaps: 56aac0f356383bab283c731acb1e687c51de6472
+  MARKRangeSlider: 5d97bb1127453ae7d8eceaa5122060abb666b82f
 
 COCOAPODS: 0.38.2

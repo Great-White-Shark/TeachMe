@@ -35,6 +35,10 @@ class PinTutorLocationViewController: UIViewController, UITabBarDelegate, UISear
 
     override func viewWillAppear(animated: Bool) {
         if (CLLocationManager.locationServicesEnabled() != false && CLLocationManager.authorizationStatus() != CLAuthorizationStatus.Denied) {
+            
+            print("a" + "\(CLLocationManager.locationServicesEnabled())")
+            print("b" + "\(CLLocationManager.authorizationStatus() != CLAuthorizationStatus.Denied)")
+            
             // Load current user location
             locationManager.startUpdatingLocation()
             mapView.myLocationEnabled = true
@@ -94,7 +98,7 @@ class PinTutorLocationViewController: UIViewController, UITabBarDelegate, UISear
     
         let geocoder = GMSGeocoder()
         geocoder.reverseGeocodeCoordinate(coordinate) { response, error in
-            if let address = response?.firstResult() {
+            if let address = response!.firstResult() {
                 
                 let lines = address.lines as! [String]
                 self.locationAddressLabel.text = lines.joinWithSeparator("\n")

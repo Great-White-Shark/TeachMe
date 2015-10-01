@@ -44,7 +44,7 @@
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(3., 2.), NO, [[UIScreen mainScreen] scale]);
 
     UIBezierPath *rectanglePath = [UIBezierPath bezierPathWithRect:CGRectMake(0., 0., 3., 2.)];
-    [UIColor.redColor setFill];
+    [UIColor.blueColor setFill];
     [rectanglePath fill];
 
     UIImage *thumbnail = UIGraphicsGetImageFromCurrentImageContext();

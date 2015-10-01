@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import BMASliders
+
 
 class TutorFiltersTableViewController: UITableViewController {
 
     @IBOutlet weak var nameInputTextField: UITextField!
     @IBOutlet weak var genderImageView: UIImageView!
     
+    @IBOutlet weak var ratingRangeSlider: BMARangeSlider!
     var isMale: Bool?
     
     override func viewWillDisappear(animated: Bool) {
@@ -21,6 +24,7 @@ class TutorFiltersTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ratingRangeSlider.style.unselectedLineImage()
         
         
     }

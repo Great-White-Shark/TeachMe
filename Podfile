@@ -8,6 +8,7 @@ target 'TeachMe' do
      pod "GoogleMaps"
      pod 'BMASliders', '~> 1.0.0'
      pod 'Alamofire', '~> 2.0' 
+     pod 'MARKRangeSlider'
 end
 
 target 'TeachMeTests' do

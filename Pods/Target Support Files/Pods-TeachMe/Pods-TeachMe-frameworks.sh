@@ -54,8 +54,10 @@ code_sign_if_enabled() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-TeachMe/Alamofire.framework'
   install_framework 'Pods-TeachMe/BMASliders.framework'
+  install_framework 'Pods-TeachMe/MARKRangeSlider.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-TeachMe/Alamofire.framework'
   install_framework 'Pods-TeachMe/BMASliders.framework'
+  install_framework 'Pods-TeachMe/MARKRangeSlider.framework'
 fi
