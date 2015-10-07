@@ -39,9 +39,6 @@
 -// User can view history 
 -// User can add their favourite tutor/student.
 
-#### Wireframe
-> Check out our wireframe here: https://app.moqups.com/vuminhkhang1995@gmail.com/Mec1JzzR/view/page/a19266cfb
-![Wireframe Image](images/wireframe.png)
 
 
 
